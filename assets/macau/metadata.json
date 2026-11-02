@@ -1,0 +1,112 @@
+{
+  "title": "澳門土地用途地圖",
+  "checked": "2026-11-02",
+  "snapshot": true,
+  "masterPlan": "第7/2022號行政法規《澳門特別行政區城市總體規劃（2020-2040）》",
+  "masterEffective": "2022-02-15",
+  "masterSource": "https://bo.dsaj.gov.mo/bo/i/2022/07/regadm07_cn.asp",
+  "detailSource": "https://bo.dsaj.gov.mo/bo/i/2024/12/regadm08_cn.asp",
+  "gisSource": "https://cadastre.gis.gov.mo/MGSP_Cad/chn/main.html",
+  "webmapSource": "https://webmap.gis.gov.mo/",
+  "revisionStatus": "2026年第一次修改草案已完成公開諮詢；2026-10-26官方公告仍將後續程序列為進行中。本版未把草案當作已生效規劃。",
+  "revisionSource": "https://www.gov.mo/zh-hant/news/1276981/",
+  "coordinateReference": "EPSG:8433（Macao 1920 / Macao Grid）→ EPSG:4326；PROJ選用EPSG:8438 Molodensky-Badekas坐標轉換；非測量成果。",
+  "transform": "+proj=pipeline +step +inv +proj=tmerc +lat_0=22.2123972222222 +lon_0=113.536469444444 +k=1 +x_0=20000 +y_0=20000 +ellps=intl +step +proj=push +v_3 +step +proj=cart +ellps=intl +step +proj=molobadekas +x=-202.865 +y=-303.99 +z=-155.873 +rx=-34.079 +ry=76.126 +rz=32.66 +s=6.096 +px=-2361554.788 +py=5417536.177 +pz=2391608.926 +convention=coordinate_frame +step +inv +proj=cart +ellps=WGS84 +step +proj=pop +v_3 +step +proj=unitconvert +xy_in=rad +xy_out=deg",
+  "geometrySimplificationMetres": 0.25,
+  "counts": {
+    "regions": 18,
+    "planning": 436,
+    "planningRecords": 148,
+    "detail": 80,
+    "namedDetailLots": 76,
+    "heights": 89,
+    "cadastre": 563,
+    "buildings": 10858,
+    "places": 1286,
+    "placeCategories": 31
+  },
+  "sources": {
+    "regions": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Plano_Director_v2/MapServer/0",
+    "landuse": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Plano_Director_v2/MapServer/2",
+    "detail": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Plano_UOPG/MapServer/1",
+    "heights": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Plano_UOPG/MapServer/2",
+    "cadlots": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Cad_lote/MapServer/0",
+    "buildings": "https://cadastre.gis.gov.mo/arcgis/rest/services/Cadastre_Project/Macau_T/MapServer/5"
+  },
+  "masterCategories": [
+    {
+      "code": "IF",
+      "name": "公共基礎設施區",
+      "color": "rgb(139,152,160)"
+    },
+    {
+      "code": "EU",
+      "name": "公用設施區",
+      "color": "rgb(246,183,210)"
+    },
+    {
+      "code": "C",
+      "name": "商業區",
+      "color": "rgb(238,64,47)"
+    },
+    {
+      "code": "H",
+      "name": "居住區",
+      "color": "rgb(255,221,0)"
+    },
+    {
+      "code": "I",
+      "name": "工業區",
+      "color": "rgb(145,102,30)"
+    },
+    {
+      "code": "TD",
+      "name": "旅遊娛樂區",
+      "color": "rgb(124,81,160)"
+    },
+    {
+      "code": "CE",
+      "name": "生態保護區",
+      "color": "rgb(0,133,65)"
+    },
+    {
+      "code": "VE",
+      "name": "綠地或公共開放空間區",
+      "color": "rgb(114,190,68)"
+    }
+  ],
+  "placeCategories": {
+    "酒店": 105,
+    "醫院": 12,
+    "旅館": 44,
+    "公園花園": 110,
+    "圖書館": 16,
+    "街市": 8,
+    "博物館": 43,
+    "學校": 122,
+    "高等院校": 22,
+    "加油站": 22,
+    "體育設施": 45,
+    "泳池": 11,
+    "社會服務設施": 119,
+    "公共設施": 37,
+    "教堂": 17,
+    "托兒所": 53,
+    "污水處理廠": 5,
+    "焚化設施": 3,
+    "廟宇": 42,
+    "口岸碼頭": 11,
+    "社會房屋": 19,
+    "經濟房屋": 60,
+    "娛樂場": 23,
+    "青年設施": 24,
+    "長者服務設施": 70,
+    "電影院": 9,
+    "市政墳場": 8,
+    "戶外活動場地": 1,
+    "政府部門": 120,
+    "停車場": 93,
+    "衛生中心": 12
+  },
+  "coverageNote": "總規圖形涵蓋規劃範圍，並非全澳每幅法定地籍。公開地段及場所只涵蓋服務列出的記錄；沒有記錄不代表空地、無用途或違規。場所分類並非整幅土地的法定用途，未逐一實地核實。"
+}
